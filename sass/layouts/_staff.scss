@@ -5,8 +5,11 @@
 .team-set {
   @extend %list;
 
-  //   display: flex;
-  //   gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .team-set__item {
@@ -14,10 +17,22 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
 
-.team-set__item:not(:last-child) {
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
 .team-set__container {
@@ -27,7 +42,7 @@
 }
 
 .team-set__name {
-  //   margin-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
