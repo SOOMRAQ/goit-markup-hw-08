@@ -99,6 +99,8 @@ img {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.67;
   }
 }
 
@@ -145,15 +147,30 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
 
 .hero__title {
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 360px;
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
@@ -164,6 +181,11 @@ img {
 .hero__btn:hover, .hero__btn:focus {
   color: #2196f3;
   background-color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    min-width: 216px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -495,14 +517,8 @@ img {
 }
 
 .footer__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  gap: 60px;
 }
-
 .footer__subtitle {
   margin-bottom: 20px;
   color: #ffffff;
