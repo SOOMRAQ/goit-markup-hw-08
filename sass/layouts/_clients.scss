@@ -1,0 +1,38 @@
+.partners-set {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-set__link {
+  @extend %link;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 210px;
+  height: 92px;
+
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: fill $mainTransition, border-color $mainTransition;
+
+  &:hover,
+  &:focus {
+    border-color: #2196f3;
+    fill: $accentColor;
+  }
+}
+
+.partners-set__logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

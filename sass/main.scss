@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/common';
+
+@import './base/base';
+@import './base/container';
+@import './base/section';
+
+@import './components/btn';
+@import './components/logo';
+
+@import './layouts/hero';
+@import './layouts/features';
+@import './layouts/staff';
+@import './layouts/clients';
+@import './layouts/footer';

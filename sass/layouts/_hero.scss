@@ -1,0 +1,41 @@
+.hero {
+  background-color: $accentBgColor;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-background-image.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  text-align: center;
+
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  color: $whiteColor;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__btn {
+  @extend .btn;
+
+  padding: 10px 24px;
+  min-width: 200px;
+
+  transition: background-color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    background-color: $primaryBgColor;
+  }
+}

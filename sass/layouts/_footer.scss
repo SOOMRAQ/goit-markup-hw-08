@@ -1,0 +1,124 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $accentBgColor;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 60px;
+}
+
+.footer__subtitle {
+  margin-bottom: 20px;
+
+  color: $whiteColor;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.info {
+  @extend %list;
+
+  margin-top: 20px;
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.info__link {
+  @extend %link;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition: color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  &--white {
+    color: $whiteColor;
+  }
+}
+
+.subscription-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subscription-form__input {
+  width: 450px;
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+
+  transition: border-color $mainTransition;
+
+  &:focus {
+    border-color: $accentColor;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription-form__btn {
+  @extend .btn;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  padding: 10px 28px;
+
+  transition: background-color $mainTransition, color $mainTransition;
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    color: $accentColor;
+  }
+}
+
+.subscription-form__icon {
+  margin-left: 10px;
+
+  fill: #fff;
+
+  transition: fill $mainTransition;
+
+  .subscription-form__btn:hover > &,
+  .subscription-form__btn:focus > & {
+    fill: $accentColor;
+  }
+}
