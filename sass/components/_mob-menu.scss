@@ -4,13 +4,26 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 48px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   background-color: $whiteColor;
+}
+
+.menu__open {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .menu-close {
@@ -26,6 +39,14 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  transition: fill $mainTransition;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
 }
 
 .mob-menu-list {
@@ -44,6 +65,13 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: $primaryTextColor;
+
+  transition: color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mob-menu-link--current {
@@ -69,6 +97,12 @@
   letter-spacing: 0.02em;
 
   color: $secondaryTextColor;
+  transition: color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mob-auth-link--font {
@@ -103,4 +137,9 @@
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
