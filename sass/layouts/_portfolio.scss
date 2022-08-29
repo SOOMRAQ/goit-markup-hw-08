@@ -3,15 +3,14 @@
 
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
   //   justify-content: center;
-
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
+// .filter__item {
+//   margin-right: 8px;
+// }
 
 .filter__btn {
   padding: 6px 22px;
@@ -43,20 +42,33 @@
 .products-grid {
   @extend %list;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   //   display: flex;
   //   flex-wrap: wrap;
   //   justify-content: center;
   //   gap: 30px;
 }
 
+.products-grid__item {
+}
+
 .products-grid__link {
   @extend %link;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .products-grid__descr {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+
+  flex-grow: 1;
 }
 
 .products-grid__item {
@@ -64,6 +76,16 @@
   box-shadow: none;
 
   transition: box-shadow $mainTransition;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 
   &:hover,
   &:focus {

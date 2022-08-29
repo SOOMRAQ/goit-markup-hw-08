@@ -459,103 +459,105 @@
 
     <!--Підвал-->
     <footer class="footer">
-      <div class="container footer__container">
-        <div class="footer__wrapper">
-          <a href="./index.html" class="logo">Web<span class="logo logo--white">Studio</span> </a>
-          <address>
-            <ul class="info">
-              <li class="info__item">
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__wrapper">
+            <a href="./index.html" class="logo">Web<span class="logo logo--white">Studio</span> </a>
+            <address>
+              <ul class="info">
+                <li class="info__item">
+                  <a
+                    class="info__link info__link--white"
+                    href="https://goo.gl/maps/FPXwPgD7QrcR26oE8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="info__item">
+                  <a class="info__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="info__item">
+                  <a class="info__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__wrapper">
+            <h2 class="footer__subtitle">Приєднуйтесь</h2>
+            <ul class="media-set">
+              <li>
                 <a
-                  class="info__link info__link--white"
-                  href="https://goo.gl/maps/FPXwPgD7QrcR26oE8"
+                  class="media-set__link media-set__link--color"
+                  href="https://www.instagram.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="info__item">
-                <a class="info__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a
+                  class="media-set__link media-set__link--color"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="info__item">
-                <a class="info__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a
+                  class="media-set__link media-set__link--color"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="media-set__link media-set__link--color"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
+          </div>
 
-        <div class="footer__wrapper">
-          <h2 class="footer__subtitle">Приєднуйтесь</h2>
-          <ul class="media-set">
-            <li>
-              <a
-                class="media-set__link media-set__link--color"
-                href="https://www.instagram.com/"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#insta"></use>
+          <div class="footer__wrapper">
+            <h2 class="footer__subtitle">Підпишіться на розсилку</h2>
+            <form class="subscription-form">
+              <label for=""></label
+              ><input
+                type="email"
+                name="user-mail"
+                id="mail"
+                placeholder="E-mail"
+                class="subscription-form__input"
+              />
+              <button type="submit" class="subscription-form__btn">
+                Підписатися
+                <svg width="24" height="24" class="subscription-form__icon">
+                  <use href="./images/icons.svg#send"></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="media-set__link media-set__link--color"
-                href="https://www.twitter.com/"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="media-set__link media-set__link--color"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="media-set__link media-set__link--color"
-                href="https://www.linkedin.com/"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__wrapper">
-          <h2 class="footer__subtitle">Підпишіться на розсилку</h2>
-          <form class="subscription-form">
-            <label for=""></label
-            ><input
-              type="email"
-              name="user-mail"
-              id="mail"
-              placeholder="E-mail"
-              class="subscription-form__input"
-            />
-            <button type="submit" class="subscription-form__btn">
-              Підписатися
-              <svg width="24" height="24" class="subscription-form__icon">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
           <svg width="18" height="18">
@@ -565,8 +567,8 @@
         <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
         <form class="registration-form">
-          <div class="registration-form__content">
-            <label for="name" class="registration-form__label">Ім'я</label>
+          <div class="registration-form__item">
+            <label for="name" class="registration-form__name">Ім'я</label>
             <div class="registration-form__input-area">
               <input type="text" class="registration-form__input" name="name" id="name" />
               <svg width="18" height="18" class="registration-form__icon">
@@ -574,8 +576,8 @@
               </svg>
             </div>
           </div>
-          <div class="registration-form__content">
-            <label for="tel" class="registration-form__label">Телефон</label>
+          <div class="registration-form__item">
+            <label for="tel" class="registration-form__name">Телефон</label>
             <div class="registration-form__input-area">
               <input type="tel" class="registration-form__input" name="tel" id="tel" />
               <svg width="18" height="18" class="registration-form__icon">
@@ -583,8 +585,8 @@
               </svg>
             </div>
           </div>
-          <div class="registration-form__content">
-            <label for="email" class="registration-form__label">Пошта</label>
+          <div class="registration-form__item">
+            <label for="email" class="registration-form__name">Пошта</label>
             <div class="registration-form__input-area">
               <input type="email" class="registration-form__input" name="email" id="email" />
               <svg width="18" height="18" class="registration-form__icon">
@@ -592,8 +594,8 @@
               </svg>
             </div>
           </div>
-          <div class="registration-form__content">
-            <label for="comment" class="registration-form__label">Коментар</label>
+          <div class="registration-form__item">
+            <label for="comment" class="registration-form__name">Коментар</label>
             <div class="registration-form__input-area">
               <textarea
                 name="comment"
@@ -622,12 +624,6 @@
         </form>
       </div>
     </div>
-
-    <a href="#" class="page__back-to-top-btn">
-      <svg width="25" height="25">
-        <use href="./images/icons.svg#back-to-top"></use>
-      </svg>
-    </a> -->
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
