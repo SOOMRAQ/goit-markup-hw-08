@@ -1,38 +1,51 @@
 .header {
   background-color: $primaryBgColor;
 
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
 }
 
 .header__navigation {
   display: flex;
+  align-items: center;
 }
 
 .menu {
   @extend %list;
-
-  display: flex;
-  margin-left: 93px;
-  gap: 50px;
-
   display: none;
+  margin-left: 87px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
-.menu__item {
-  position: relative;
+.menu__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu__link {
   @extend %link;
-
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $primaryTextColor;
 
@@ -51,12 +64,12 @@
 
 .menu__link--current {
   color: $accentColor;
+  position: relative;
 
   &::after {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 46px;
+    left: 0;
 
     display: block;
     content: '';
@@ -75,22 +88,28 @@
 
 .auth-navigation {
   @extend %list;
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
 
   display: none;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .auth-navigation__link {
   @extend %link;
 
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $secondaryTextColor;
 
@@ -105,8 +124,9 @@
   &:focus {
     color: $accentColor;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    justify-content: center;
+  }
 }
-
-
-
-

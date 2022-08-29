@@ -11,6 +11,10 @@
   justify-content: space-between;
 
   background-color: $whiteColor;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__open {
@@ -24,6 +28,10 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-close {
