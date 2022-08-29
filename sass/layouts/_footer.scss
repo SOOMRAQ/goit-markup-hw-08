@@ -1,132 +1,181 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: $accentBgColor;
-}
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-.footer__wrapper {
-  text-align: center;
-  @media screen and (min-width: 768px) {
-    width: 50%;
+    text-align: center;
   }
 }
 
-// .footer__wrapper:not(:last-child) {
-//   margin-bottom: 60px;
-// }
+.footer__container {
+  margin-left: auto;
+  margin-right: auto;
 
-.footer__subtitle {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.address-list {
+  @extend %list;
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    @extend %link;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $whiteColor;
+
+    transition: color $mainTransition;
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
+
+    &--color {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+.media-set__link--color {
+  fill: $whiteColor;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__title {
+  margin-top: 60px;
   margin-bottom: 20px;
 
-  color: $whiteColor;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: $whiteColor;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 
-.info {
-  @extend %list;
-
-  margin-top: 20px;
+.footer__media-wrap {
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 12px;
+    margin-left: 70px;
+  }
 }
 
-.info__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+.footer__subscribe-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
 
-.info__link {
-  @extend %link;
-
-  color: rgba(255, 255, 255, 0.6);
-
-  font-style: normal;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-  transition: color $mainTransition;
+  color: $whiteColor;
 
-  &:hover,
-  &:focus {
-    color: $accentColor;
-  }
-
-  &--white {
-    color: $whiteColor;
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
   }
 }
 
-.subscription-form {
-  display: flex;
-  flex-wrap: wrap;
+.footer__form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-.subscription-form__input {
+.footer__input-area {
   width: 450px;
+  height: 50px;
+  margin-right: 12px;
+  margin-bottom: 20px;
   padding: 15px 16px;
+
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
 
   font-size: 16px;
   line-height: 1.25;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: transparent;
-  outline: none;
+  justify-content: center;
 
-  transition: border-color $mainTransition;
-
-  &:focus {
-    border-color: $accentColor;
-  }
+  color: $whiteColor;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 0px;
   }
 }
 
-.subscription-form__btn {
+.footer__button {
   @extend .btn;
 
-  margin-top: 20px;
-
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+
   padding: 10px 28px;
 
-  transition: background-color $mainTransition, color $mainTransition;
+  fill: $whiteColor;
+
+  transition: background-color $mainTransition, color $mainTransition, fill $mainTransition;
 
   &:hover,
   &:focus {
-    background-color: #fff;
+    background-color: $whiteColor;
     color: $accentColor;
+    fill: $accentColor;
   }
 }
 
-.subscription-form__icon {
+.footer__icon {
   margin-left: 10px;
+}
 
-  fill: #fff;
-
-  transition: fill $mainTransition;
-
-  .subscription-form__btn:hover > &,
-  .subscription-form__btn:focus > & {
-    fill: $accentColor;
+.footer__subscribe-wrap {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
