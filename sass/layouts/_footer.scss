@@ -9,12 +9,31 @@
   // flex-wrap: wrap;
   // justify-content: center;
   // align-items: center;
-  text-align: center;
-  // gap: 60px;
-
+  // text-align: center;
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
+
+.footer__wrapper {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+// .footer__wrapper:not(:last-child) {
+//   margin-bottom: 60px;
+// }
 
 .footer__subtitle {
   margin-bottom: 20px;

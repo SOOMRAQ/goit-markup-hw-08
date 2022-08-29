@@ -1,0 +1,114 @@
+.header {
+  background-color: $primaryBgColor;
+
+  border: 1px solid #ececec;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.menu {
+  @extend %list;
+
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
+
+  display: none;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__link {
+  @extend %link;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $primaryTextColor;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.menu__link--current {
+  color: $accentColor;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    content: '';
+    height: 4px;
+    width: 100%;
+    background-color: $accentColor;
+    border-radius: 2px;
+  }
+}
+
+.auth-navigation__icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.auth-navigation {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+
+  display: none;
+}
+
+.auth-navigation__link {
+  @extend %link;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $secondaryTextColor;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $mainTransition;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.menu__open {
+  margin-left: auto;
+
+  cursor: pointer;
+}
