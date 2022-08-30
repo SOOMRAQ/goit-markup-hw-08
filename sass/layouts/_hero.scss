@@ -1,7 +1,6 @@
 .hero {
   background-color: $accentBgColor;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/mob/hero-bg-image-mob.jpg');
+  background-image: $bgGradient, url('../images/mob/hero-bg-image-mob.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,15 +11,23 @@
   height: 400px;
   display: flex;
   align-items: center;
+
+  @include retina {
+    background-image: $bgGradient, url('../images/mob/hero-bg-image-mob@2x.jpg');
+  }
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/tablet/hero-bg-image-tablet.jpg');
+    background-image: $bgGradient, url('../images/tablet/hero-bg-image-tablet.jpg');
+    @include retina {
+      background-image: $bgGradient, url('../images/tablet/hero-bg-image-tablet@2x.jpg');
+    }
   }
 
   @media screen and (min-width: 1200px) {
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/hero-background-image.jpg');
+    background-image: $bgGradient, url('../images/hero-background-image.jpg');
+    @include retina {
+      background-image: $bgGradient, url('../images/hero-background-image@2x.jpg');
+    }
   }
 }
 
