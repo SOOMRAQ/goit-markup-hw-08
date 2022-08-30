@@ -214,9 +214,12 @@
 
           <ul class="team-set">
             <li class="team-set__item">
-              <img 
-              srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
-              src="./images/img1.jpg" alt="PD" width="" height="" />
+              <picture>
+                <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./images/tablet/img1-tablet.jpg 1x, ./images/tablet/img1-tablet@2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./images/mob/img1-mob.jpg 1x, ./images/mob/img1-mob@2x.jpg 2x" media="min-width: 480px">
+                <img src="./images/img1.jpg" alt="PD" width="" height="" />
+              </picture>
               <div class="team-set__container">
                 <h3 class="team-set__name">Ігор Дем'яненко</h3>
                 <p class="team-set__descr">Product Designer</p>
@@ -263,8 +266,12 @@
               </div>
             </li>
             <li class="team-set__item">
-              <img srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
-              src="./images/img2.jpg" alt="FD" width="" height="" />
+              <picture>
+                <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./images/tablet/img4-tablet.jpg 1x, ./images/tablet/img4-tablet@2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./images/mob/img4-mob.jpg 1x, ./images/mob/img4-mob@2x.jpg 2x" media="min-width: 480px">
+                <img src="./images/img2.jpg" alt="FD" width="" height="" />
+              </picture>
               <div class="team-set__container">
                 <h3 class="team-set__name">Ольга Рєпіна</h3>
                 <p class="team-set__descr">Frontend Developer</p>
@@ -312,8 +319,12 @@
               </div>
             </li>
             <li class="team-set__item">
-              <img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
-              src="./images/img3.jpg" alt="Marketing" width="" height="" />
+              <picture>
+                <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./images/tablet/img3-tablet.jpg 1x, ./images/tablet/img3-tablet@2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./images/mob/img3-mob.jpg 1x, ./images/mob/img3-mob@2x.jpg 2x" media="min-width: 480px">
+              <img src="./images/img3.jpg" alt="Marketing" width="" height="" />
+              </picture>
               <div class="team-set__container">
                 <h3 class="team-set__name">Микола Тарасов</h3>
                 <p class="team-set__descr">Marketing</p>
@@ -361,8 +372,13 @@
               </div>
             </li>
             <li class="team-set__item">
-              <img srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x"
-              src="./images/img4.jpg" alt="UId" width="" height="" />
+              <picture>
+                <source srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" media="min-width: 1200px">
+                <source srcset="./images/tablet/img2-tablet.jpg 1x, ./images/tablet/img2-tablet@2x.jpg 2x" media="min-width: 768px">
+                <source srcset="./images/mob/img2-mob.jpg 1x, ./images/mob/img2-mob@2x.jpg 2x" media="min-width: 480px">
+              <img src="./images/img4.jpg" alt="UId" width="" height="" />
+              </picture>
+              
               <div class="team-set__container">
                 <h3 class="team-set__name">Михайло Єрмаков</h3>
                 <p class="team-set__descr">UI Designer</p>
