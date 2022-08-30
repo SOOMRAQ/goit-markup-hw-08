@@ -1,14 +1,12 @@
 .partners-set {
   @extend %list;
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-    margin: -15px;
-  }
+  margin: -15px;
 }
 
 .partners-set__item {

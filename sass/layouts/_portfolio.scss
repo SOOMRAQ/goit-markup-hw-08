@@ -98,9 +98,6 @@
   flex-grow: 1;
 }
 
-.products-grid__item {
-}
-
 .products-grid__subtitle {
   margin-bottom: 4px;
 
@@ -132,14 +129,18 @@
   transform: translateY(100%);
   transition: transform $mainTransition;
 
-  padding: 63px 24px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+
   height: 100%;
 
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: $whiteColor;
   background-color: rgba(33, 150, 243, 0.9);
 
   .products-grid__item:hover & {

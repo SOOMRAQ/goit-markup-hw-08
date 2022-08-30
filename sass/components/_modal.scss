@@ -149,11 +149,16 @@
   transition: border-color $mainTransition;
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.14;
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
   }
 
   &:focus {
@@ -187,6 +192,11 @@
 
     border: 2px solid #303030;
     border-radius: 3px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
   }
 
   .registration-form__checkbox:checked + &::before {

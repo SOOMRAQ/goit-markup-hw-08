@@ -1,7 +1,7 @@
 .hero {
   background-color: $accentBgColor;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-background-image.jpg');
+    url('../images/mob/hero-bg-image-mob.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +12,15 @@
   height: 400px;
   display: flex;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/hero-bg-image-tablet.jpg');
+  }
 
   @media screen and (min-width: 1200px) {
     height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero-background-image.jpg');
   }
 }
 
