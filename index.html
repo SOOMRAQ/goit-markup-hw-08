@@ -1,556 +1,553 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body class="page">
-    <!--Шапка сайту-->
-    <header class="header">
-      <div class="container header__wrapper">
-        <nav class="header__navigation">
-          <a href="./index.html" class="logo">Web<span class="logo logo--dark">Studio</span> </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link menu__link--current" href="./index.html">Студія</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+<body class="page">
+  <!--Шапка сайту-->
+  <header class="header">
+    <div class="container header__wrapper">
+      <nav class="header__navigation">
+        <a href="./index.html" class="logo">Web<span class="logo logo--dark">Studio</span> </a>
 
-        <ul class="auth-navigation">
-          <li class="auth-navigation__item">
-            <a class="auth-navigation__link" href="mailto:info@devstudio.com">
-              <svg class="auth-navigation__icon" width="16" height="16">
-                <use href="./images/icons.svg#post"></use>
-              </svg>
-              info@devstudio.com</a
-            >
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="./index.html">Студія</a>
           </li>
-          <li class="auth-navigation__item">
-            <a class="auth-navigation__link" href="tel:+380961111111">
-              <svg class="auth-navigation__icon" width="16" height="16">
-                <use href="./images/icons.svg#tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
+          <li class="menu__item">
+            <a class="menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="auth-navigation">
+        <li class="auth-navigation__item">
+          <a class="auth-navigation__link" href="mailto:info@devstudio.com">
+            <svg class="auth-navigation__icon" width="16" height="16">
+              <use href="./images/icons.svg#post"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="auth-navigation__item">
+          <a class="auth-navigation__link" href="tel:+380961111111">
+            <svg class="auth-navigation__icon" width="16" height="16">
+              <use href="./images/icons.svg#tel"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+
+      <button type="button" class="menu__open">
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mob-menu is-hidden">
+      <button type="button" class="menu-close">
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <nav class="mob-menu-nav">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link mob-menu-link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="mob-auth">
+          <li class="mob-auth-item">
+            <a class="mob-auth-link mob-auth-link--font" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mob-auth-item">
+            <a class="mob-auth-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
 
-        <button type="button" class="menu__open">
-          <svg width="24" height="16">
-            <use href="./images/icons.svg#menu"></use>
-          </svg>
-        </button>
+        <ul class="mob-media-list">
+          <li class="mob-media-item">
+            <a href="https://www.instagram.com" class="mob-media-link" target="_blank">Instagram</a>
+          </li>
+          <li class="mob-media-item">
+            <a href="https://www.twitter.com" class="mob-media-link" target="_blank">Twitter</a>
+          </li>
+          <li class="mob-media-item">
+            <a href="https://www.facebook.com" class="mob-media-link" target="_blank">Facebook</a>
+          </li>
+          <li class="mob-media-item">
+            <a href="https://www.linkedin.com" class="mob-media-link" target="_blank">Linkedin</a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </header>
 
-      <div class="mob-menu is-hidden">
-        <button type="button" class="menu-close">
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#close-menu"></use>
-          </svg>
-        </button>
-        <nav class="mob-menu-nav">
-          <ul class="mob-menu-list">
-            <li class="mob-menu-item">
-              <a class="mob-menu-link mob-menu-link--current" href="./index.html">Студія</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="mob-menu-item">
-              <a class="mob-menu-link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <ul class="mob-auth">
-            <li class="mob-auth-item">
-              <a class="mob-auth-link mob-auth-link--font" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mob-auth-item">
-              <a class="mob-auth-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-          </ul>
-
-          <ul class="mob-media-list">
-            <li class="mob-media-item">
-              <a href="https://www.instagram.com" class="mob-media-link" target="_blank"
-                >Instagram</a
-              >
-            </li>
-            <li class="mob-media-item">
-              <a href="https://www.twitter.com" class="mob-media-link" target="_blank">Twitter</a>
-            </li>
-            <li class="mob-media-item">
-              <a href="https://www.facebook.com" class="mob-media-link" target="_blank">Facebook</a>
-            </li>
-            <li class="mob-media-item">
-              <a href="https://www.linkedin.com" class="mob-media-link" target="_blank">Linkedin</a>
-            </li>
-          </ul>
-        </div>
+  <main>
+    <!-- Герой -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Герой -->
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
-        </div>
-      </section>
+    <!--Переваги-->
+    <section class="features section">
+      <div class="container">
+        <h2 class="section__title visually-hidden">Переваги</h2>
 
-      <!--Переваги-->
-      <section class="features section">
-        <div class="container">
-          <h2 class="section__title visually-hidden">Переваги</h2>
+        <ul class="card-set">
+          <li class="card-set__item">
+            <div class="card-set__logo">
+              <svg width="70" height="70">
+                <use href="./images/icons.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="card-set__title">Увага до деталей</h3>
+            <p class="card-set__description">
+              Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+            </p>
+          </li>
+          <li class="card-set__item">
+            <div class="card-set__logo">
+              <svg width="70" height="70">
+                <use href="./images/icons.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="card-set__title">Пунктуальність</h3>
+            <p class="card-set__description">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+            </p>
+          </li>
+          <li class="card-set__item">
+            <div class="card-set__logo">
+              <svg width="70" height="70">
+                <use href="./images/icons.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="card-set__title">Планування</h3>
+            <p class="card-set__description">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="card-set__item">
+            <div class="card-set__logo">
+              <svg width="70" height="70">
+                <use href="./images/icons.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="card-set__title">Сучасні технології</h3>
+            <p class="card-set__description">
+              Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-          <ul class="card-set">
-            <li class="card-set__item">
-              <div class="card-set__logo">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="card-set__title">Увага до деталей</h3>
-              <p class="card-set__description">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="card-set__item">
-              <div class="card-set__logo">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="card-set__title">Пунктуальність</h3>
-              <p class="card-set__description">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="card-set__item">
-              <div class="card-set__logo">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="card-set__title">Планування</h3>
-              <p class="card-set__description">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="card-set__item">
-              <div class="card-set__logo">
-                <svg width="70" height="70">
-                  <use href="./images/icons.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="card-set__title">Сучасні технології</h3>
-              <p class="card-set__description">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <!--Напрями роботи-->
+    <section class="work-area section">
+      <div class="container">
+        <h2 class="section__title">Чим ми займаємося</h2>
 
-      <!--Напрями роботи-->
-      <section class="work-area section">
-        <div class="container">
-          <h2 class="section__title">Чим ми займаємося</h2>
+        <ul class="picture-set">
+          <li class="picture-set__item">
+            <img srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x" src="./images/1.jpg" alt="Розробка алгоритмів"
+              width="" height="" />
+            <div class="picture-set__descr">
+              <h3 class="picture-set__title">Декстопні додатки</h3>
+            </div>
+          </li>
+          <li class="picture-set__item">
+            <img srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x" src="./images/2.jpg" alt="Програмне забезпечення"
+              width="" height="" />
+            <div class="picture-set__descr">
+              <h3 class="picture-set__title">Мобільні додатки</h3>
+            </div>
+          </li>
+          <li class="picture-set__item">
+            <img srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x" src="./images/3.jpg" alt="Дизайнерські вирішення"
+              width="" height="" />
+            <div class="picture-set__descr">
+              <h3 class="picture-set__title">Дизайнерські рішення</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-          <ul class="picture-set">
-            <li class="picture-set__item">
-              <img srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x"
-              src="./images/1.jpg" alt="Розробка алгоритмів" width="" height="" />
-              <div class="picture-set__descr">
-                <h3 class="picture-set__title">Декстопні додатки</h3>
-              </div>
-            </li>
-            <li class="picture-set__item">
-              <img srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x"
-              src="./images/2.jpg" alt="Програмне забезпечення" width="" height="" />
-              <div class="picture-set__descr">
-                <h3 class="picture-set__title">Мобільні додатки</h3>
-              </div>
-            </li>
-            <li class="picture-set__item">
-              <img srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x"
-              src="./images/3.jpg" alt="Дизайнерські вирішення" width="" height="" />
-              <div class="picture-set__descr">
-                <h3 class="picture-set__title">Дизайнерські рішення</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+    <!--Team-->
+    <section class="staff section">
+      <div class="container">
+        <h2 class="section__title">Наша команда</h2>
 
-      <!--Team-->
-      <section class="staff section">
-        <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+        <ul class="team-set">
+          <li class="team-set__item">
+            <picture>
+              <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" media="min-width: 1200px">
+              <source srcset="./images/tablet/img1-tablet.jpg 1x, ./images/tablet/img1-tablet@2x.jpg 2x"
+                media="min-width: 768px">
+              <source srcset="./images/mob/img1-mob.jpg 1x, ./images/mob/img1-mob@2x.jpg 2x" media="min-width: 480px">
+              <img src="./images/img1.jpg" alt="PD" width="" height="" />
+            </picture>
+            <div class="team-set__container">
+              <h3 class="team-set__name">Ігор Дем'яненко</h3>
+              <p class="team-set__descr">Product Designer</p>
+              <ul class="media-set">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.instagram.com/">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#insta"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-          <ul class="team-set">
-            <li class="team-set__item">
-              <picture>
-                <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./images/tablet/img1-tablet.jpg 1x, ./images/tablet/img1-tablet@2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./images/mob/img1-mob.jpg 1x, ./images/mob/img1-mob@2x.jpg 2x" media="min-width: 480px">
-                <img src="./images/img1.jpg" alt="PD" width="" height="" />
-              </picture>
-              <div class="team-set__container">
-                <h3 class="team-set__name">Ігор Дем'яненко</h3>
-                <p class="team-set__descr">Product Designer</p>
-                <ul class="media-set">
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.instagram.com/">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#insta"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-set__item">
+            <picture>
+              <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" media="min-width: 1200px">
+              <source srcset="./images/tablet/img4-tablet.jpg 1x, ./images/tablet/img4-tablet@2x.jpg 2x"
+                media="min-width: 768px">
+              <source srcset="./images/mob/img4-mob.jpg 1x, ./images/mob/img4-mob@2x.jpg 2x" media="min-width: 480px">
+              <img src="./images/img2.jpg" alt="FD" width="" height="" />
+            </picture>
+            <div class="team-set__container">
+              <h3 class="team-set__name">Ольга Рєпіна</h3>
+              <p class="team-set__descr">Frontend Developer</p>
+              <ul class="media-set">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.instagram.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#insta"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-set__item">
-              <picture>
-                <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./images/tablet/img4-tablet.jpg 1x, ./images/tablet/img4-tablet@2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./images/mob/img4-mob.jpg 1x, ./images/mob/img4-mob@2x.jpg 2x" media="min-width: 480px">
-                <img src="./images/img2.jpg" alt="FD" width="" height="" />
-              </picture>
-              <div class="team-set__container">
-                <h3 class="team-set__name">Ольга Рєпіна</h3>
-                <p class="team-set__descr">Frontend Developer</p>
-                <ul class="media-set">
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.instagram.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#insta"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-set__item">
-              <picture>
-                <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./images/tablet/img3-tablet.jpg 1x, ./images/tablet/img3-tablet@2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./images/mob/img3-mob.jpg 1x, ./images/mob/img3-mob@2x.jpg 2x" media="min-width: 480px">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-set__item">
+            <picture>
+              <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" media="min-width: 1200px">
+              <source srcset="./images/tablet/img3-tablet.jpg 1x, ./images/tablet/img3-tablet@2x.jpg 2x"
+                media="min-width: 768px">
+              <source srcset="./images/mob/img3-mob.jpg 1x, ./images/mob/img3-mob@2x.jpg 2x" media="min-width: 480px">
               <img src="./images/img3.jpg" alt="Marketing" width="" height="" />
-              </picture>
-              <div class="team-set__container">
-                <h3 class="team-set__name">Микола Тарасов</h3>
-                <p class="team-set__descr">Marketing</p>
-                <ul class="media-set">
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.instagram.com/">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#insta"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+            </picture>
+            <div class="team-set__container">
+              <h3 class="team-set__name">Микола Тарасов</h3>
+              <p class="team-set__descr">Marketing</p>
+              <ul class="media-set">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.instagram.com/">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#insta"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-set__item">
-              <picture>
-                <source srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" media="min-width: 1200px">
-                <source srcset="./images/tablet/img2-tablet.jpg 1x, ./images/tablet/img2-tablet@2x.jpg 2x" media="min-width: 768px">
-                <source srcset="./images/mob/img2-mob.jpg 1x, ./images/mob/img2-mob@2x.jpg 2x" media="min-width: 480px">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-set__item">
+            <picture>
+              <source srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" media="min-width: 1200px">
+              <source srcset="./images/tablet/img2-tablet.jpg 1x, ./images/tablet/img2-tablet@2x.jpg 2x"
+                media="min-width: 768px">
+              <source srcset="./images/mob/img2-mob.jpg 1x, ./images/mob/img2-mob@2x.jpg 2x" media="min-width: 480px">
               <img src="./images/img4.jpg" alt="UId" width="" height="" />
-              </picture>
-              
-              <div class="team-set__container">
-                <h3 class="team-set__name">Михайло Єрмаков</h3>
-                <p class="team-set__descr">UI Designer</p>
-                <ul class="media-set">
-                  <li class="media-set__item">
-                    <a class="media-set__link" href="https://www.instagram.com/">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#insta"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+            </picture>
 
-                  <li class="member-connect-item">
-                    <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+            <div class="team-set__container">
+              <h3 class="team-set__name">Михайло Єрмаков</h3>
+              <p class="team-set__descr">UI Designer</p>
+              <ul class="media-set">
+                <li class="media-set__item">
+                  <a class="media-set__link" href="https://www.instagram.com/">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#insta"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="member-connect-item">
-                    <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+                <li class="member-connect-item">
+                  <a class="media-set__link" href="https://www.twitter.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-                  <li class="member-connect-item">
-                    <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+                <li class="member-connect-item">
+                  <a class="media-set__link" href="https://www.facebook.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
 
-      <!-- Clients -->
-      <section class="clients section">
-        <div class="container">
-          <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="partners-set">
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#ya-co"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#tagline"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#company"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#foster"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#brand"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="partners-set__item">
-              <a class="partners-set__link" href="#">
-                <svg class="partners-set__logo" width="106" height="60">
-                  <use href="./images/icons.svg#tag"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+                <li class="member-connect-item">
+                  <a class="media-set__link" href="https://www.linkedin.com/" target="_blank">
+                    <div class="media-set__icon">
+                      <svg class="partners-set__logo" width="20" height="20">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <!--Підвал-->
-    <footer class="footer">
+    <!-- Clients -->
+    <section class="clients section">
+      <div class="container">
+        <h2 class="section__title">Постійні клієнти</h2>
+        <ul class="partners-set">
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#ya-co"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#tagline"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#company"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#foster"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#brand"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="partners-set__item">
+            <a class="partners-set__link" href="#">
+              <svg class="partners-set__logo" width="106" height="60">
+                <use href="./images/icons.svg#tag"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!--Підвал-->
+  <footer class="footer">
     <div class="container footer__container">
       <div class="footer__wrapper">
         <a href="./index.html" class="logo">Web<span class="logo logo--white">Studio</span> </a>
         <address class="address">
           <ul class="address-list">
             <li class="address-list__item">
-              <a class="address-list__link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі
+              <a class="address-list__link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м.
+                Київ, пр-т Лесі
                 Українки, 26</a>
             </li>
             <li class="address-list__item">
-              <a class="address-list__link address-list__link--color" href="mailto:info@devstudio.com">info@example.com</a>
+              <a class="address-list__link address-list__link--color"
+                href="mailto:info@devstudio.com">info@example.com</a>
             </li>
             <li class="address-list__item adress__item--mobile">
               <a class="address-list__link address-list__link--color" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-        </address> 
+        </address>
       </div>
 
       <div class="footer__media-wrap">
         <h2 class="footer__title">Приєднуйтесь</h2>
         <div>
-        <ul class="media-set">
-                  <li class="media-set__item">
-                    <a class="media-set__link media-set__link--color" href="https://www.instagram.com/">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#insta"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+          <ul class="media-set">
+            <li class="media-set__item">
+              <a class="media-set__link media-set__link--color" href="https://www.instagram.com/">
+                <div class="media-set__icon">
+                  <svg class="partners-set__logo" width="20" height="20">
+                    <use href="./images/icons.svg#insta"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link media-set__link--color" href="https://www.twitter.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#twitter"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+            <li class="media-set__item">
+              <a class="media-set__link media-set__link--color" href="https://www.twitter.com/" target="_blank">
+                <div class="media-set__icon">
+                  <svg class="partners-set__logo" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link media-set__link--color" href="https://www.facebook.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#facebook"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
+            <li class="media-set__item">
+              <a class="media-set__link media-set__link--color" href="https://www.facebook.com/" target="_blank">
+                <div class="media-set__icon">
+                  <svg class="partners-set__logo" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
 
-                  <li class="media-set__item">
-                    <a class="media-set__link media-set__link--color" href="https://www.linkedin.com/" target="_blank">
-                      <div class="media-set__icon">
-                        <svg class="partners-set__logo" width="20" height="20">
-                          <use href="./images/icons.svg#linkedin"></use>
-                        </svg>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
+            <li class="media-set__item">
+              <a class="media-set__link media-set__link--color" href="https://www.linkedin.com/" target="_blank">
+                <div class="media-set__icon">
+                  <svg class="partners-set__logo" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-   
-        <div class="footer__subscribe-wrap">
-          <h2 class="footer__subscribe-title">Підпишіться на розсилку</h2>
+
+      <div class="footer__subscribe-wrap">
+        <h2 class="footer__subscribe-title">Підпишіться на розсилку</h2>
         <form>
           <div class="footer__form">
             <label class="footer__name">
@@ -561,80 +558,69 @@
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>
-            </div>
+          </div>
         </form>
       </div>
   </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__close-btn" data-modal-close>
-          <svg width="18" height="18">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
-        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__close-btn" data-modal-close>
+        <svg width="18" height="18">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
-        <form class="registration-form">
-          <div class="registration-form__item">
-            <label for="name" class="registration-form__name">Ім'я</label>
-            <div class="registration-form__input-area">
-              <input type="text" class="registration-form__input" name="name" id="name" />
-              <svg width="18" height="18" class="registration-form__icon">
-                <use href="./images/icons.svg#user-name"></use>
-              </svg>
-            </div>
+      <form class="registration-form">
+        <div class="registration-form__item">
+          <label for="name" class="registration-form__name">Ім'я</label>
+          <div class="registration-form__input-area">
+            <input type="text" class="registration-form__input" name="name" id="name" />
+            <svg width="18" height="18" class="registration-form__icon">
+              <use href="./images/icons.svg#user-name"></use>
+            </svg>
           </div>
-          <div class="registration-form__item">
-            <label for="tel" class="registration-form__name">Телефон</label>
-            <div class="registration-form__input-area">
-              <input type="tel" class="registration-form__input" name="tel" id="tel" />
-              <svg width="18" height="18" class="registration-form__icon">
-                <use href="./images/icons.svg#phone-number"></use>
-              </svg>
-            </div>
+        </div>
+        <div class="registration-form__item">
+          <label for="tel" class="registration-form__name">Телефон</label>
+          <div class="registration-form__input-area">
+            <input type="tel" class="registration-form__input" name="tel" id="tel" />
+            <svg width="18" height="18" class="registration-form__icon">
+              <use href="./images/icons.svg#phone-number"></use>
+            </svg>
           </div>
-          <div class="registration-form__item">
-            <label for="email" class="registration-form__name">Пошта</label>
-            <div class="registration-form__input-area">
-              <input type="email" class="registration-form__input" name="email" id="email" />
-              <svg width="18" height="18" class="registration-form__icon">
-                <use href="./images/icons.svg#user-mail"></use>
-              </svg>
-            </div>
+        </div>
+        <div class="registration-form__item">
+          <label for="email" class="registration-form__name">Пошта</label>
+          <div class="registration-form__input-area">
+            <input type="email" class="registration-form__input" name="email" id="email" />
+            <svg width="18" height="18" class="registration-form__icon">
+              <use href="./images/icons.svg#user-mail"></use>
+            </svg>
           </div>
-          <div class="registration-form__item">
-            <label for="comment" class="registration-form__name">Коментар</label>
-            <div class="registration-form__input-area">
-              <textarea
-                name="comment"
-                id="comment"
-                rows="4"
-                class="registration-form__comment"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
+        </div>
+        <div class="registration-form__item">
+          <label for="comment" class="registration-form__name">Коментар</label>
+          <div class="registration-form__input-area">
+            <textarea name="comment" id="comment" rows="4" class="registration-form__comment"
+              placeholder="Введіть текст"></textarea>
           </div>
-          <div class="registration-form__policy">
-            <input
-              type="checkbox"
-              name="checkbox"
-              id="checkbox"
-              class="registration-form__checkbox visually-hidden"
-            />
-            <label for="checkbox" class="registration-form__text"
-              >Погоджуюся з розсилкою та приймаю&nbsp;<a class="registration-form__link" href=""
-                >&nbsp;Умови договору</a
-              >
-            </label>
-          </div>
+        </div>
+        <div class="registration-form__policy">
+          <input type="checkbox" name="checkbox" id="checkbox" class="registration-form__checkbox visually-hidden" />
+          <label for="checkbox" class="registration-form__text">Погоджуюся з розсилкою та приймаю&nbsp;<a
+              class="registration-form__link" href="">&nbsp;Умови договору</a>
+          </label>
+        </div>
 
-          <button type="submit" class="registration-form__btn">Відправити</button>
-        </form>
-      </div>
+        <button type="submit" class="registration-form__btn">Відправити</button>
+      </form>
     </div>
+  </div>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>

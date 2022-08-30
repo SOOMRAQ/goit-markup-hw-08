@@ -1007,6 +1007,10 @@ img {
   transform: translateY(0);
 }
 
+.products-grid__top-wrap img {
+  width: 100%;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
