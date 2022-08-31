@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 
   background-color: $whiteColor;
 
@@ -119,12 +120,17 @@
   line-height: calc(40 / 34);
 
   color: $accentColor;
+
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+  }
 }
 
 .mob-media-list {
   @extend %list;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 

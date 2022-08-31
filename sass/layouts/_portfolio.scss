@@ -146,6 +146,10 @@
   .products-grid__item:hover & {
     transform: translateY(0);
   }
+
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
 }
 
 .products-grid__top-wrap img {
